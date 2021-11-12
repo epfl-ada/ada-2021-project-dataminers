@@ -18,7 +18,7 @@ Apply sentiment analysis to the quotations and score them from 0-1, with 0 as mo
 #### Task 1.3: What is the real impact of American political efforts on their actual emissions
 Together with the actual annual greenhouse gas emissions data, construct a regression analysis of 
 
-
+<img src="https://github.com/epfl-ada/ada-2021-project-dataminers/blob/main/pics/equ.png?raw=true" width = "540" height = "60" alt="" align=center />
 
 *Discuss:* The casualty relationship is impossible to detect in this context, because the change of the greenhouse gas emissions can be also due to various non-political reasons, for example, the decrease of air and road travel during the COVID-19 pandemic.
 
