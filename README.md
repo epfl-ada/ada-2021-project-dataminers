@@ -18,13 +18,7 @@ Apply sentiment analysis to the quotations and score them from 0-1, with 0 as mo
 #### Task 1.3: What is the real impact of American political efforts on their actual emissions
 Together with the actual annual greenhouse gas emissions data, construct a regression analysis of 
 
-$$
-\footnotesize
-\begin{aligned} 
- emissions \sim & political\ attention\ value+political \ support\ rate\\ 
-& +political\ attention\ value*political\ support\ rate
-\end{aligned}
-$$ 
+
 
 *Discuss:* The casualty relationship is impossible to detect in this context, because the change of the greenhouse gas emissions can be also due to various non-political reasons, for example, the decrease of air and road travel during the COVID-19 pandemic.
 
@@ -38,8 +32,8 @@ What characteristics do people who are against it have in common, and what might
 -   Total annual greenhouse gas emissions in the United States from 2008 to 2019: the data is in csv format with a shape of (8,12). Columns are years from 2008 to 2019. Rows are GHG emissions in 7 sectors, including transportation, electricity generation, industry, agriculture, commercial, residential, and U.S. territories. Last row is the total amount of GHG in all 7 sectors. We plan to draw a line stacked chart ([one example here](https://github.com/epfl-ada/ada-2021-project-dataminers/blob/main/pics/us-ghg-emissions.png?raw=true)) to visualize the trend and use the data to perform a regression analysis with the results from quotebank.
 (Source: EPA's annual Inventory of the U.S. Greenhouse Gas Emissions and Sinks [Greenhouse Gas Inventory Data Explorer | US EPA](https://cfpub.epa.gov/ghgdata/inventoryexplorer/#allsectors/allsectors/allgas/econsect/all))
 ## Methods
+Workflow:
 ![workflow](https://github.com/epfl-ada/ada-2021-project-dataminers/blob/main/pics/workflow.png?raw=true)
-<center><b>Workflow</b></center>
 
 * **Information retrieval**: collect climate change related quotations for each year
 	* method: basic search engine using word embeddings (can capture syntactic relationships and encode the word into low dimensions)
