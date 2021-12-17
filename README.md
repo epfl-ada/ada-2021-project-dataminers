@@ -24,7 +24,7 @@ Together with the actual annual greenhouse gas emissions data, construct a regre
  
 to see how significantly political efforts can affect th actual emissions.
 
-*Discuss:* The casualty relationship is impossible to detect in this context, because the change of CO~2~ emissions can be also due to various non-political reasons, for example, the 2008 financial crisis and  COVID-19 pandemic.
+*Discuss:* The casualty relationship is impossible to detect in this context, because the change of CO2 emissions can be also due to various non-political reasons, for example, the 2008 financial crisis and  COVID-19 pandemic.
 
 ---
 ### Task 2: How do politicians’ demographic factors affect their attitudes to this issue 
