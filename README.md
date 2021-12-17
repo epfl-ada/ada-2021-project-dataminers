@@ -49,7 +49,8 @@ Show different demographic distribution among speakers with positive and negativ
 
 * **Observational study**: visualize demographic distribution among speakers with positive and negative attitudes, and analyze what might have resulted in the negative attitudes
 	* method: turn categorical columns into dummy variables --> use `causalinference` package to estimate Inverse Propensity Score Weight (IPSW) and calculate Average Treatment Effect (ATE) --> compare ATE of each group and draw conclusions
-  
+## Datastory
+https://dataminerada.github.io/
 ## Contributions 
 **Maocheng Xu**: Wiki data cleaning, Sentiment analysis, Webpage visualization
 
