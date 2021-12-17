@@ -1,5 +1,6 @@
 ﻿# ADA Project (Milestone 3)
 ## Title: How political efforts affect annual greenhouse gas (GHGs) emissions
+**Data Story:** https://dataminerada.github.io
 ## Abstract
 Climate change is one of the world’s top topics today, and reducing greenhouse gas emissions is a heavy responsibility of the governments of major countries. However, there also exists objections. As the largest emitter of carbon dioxide per capita in the world, how did American politicians care about it, and what are their attitudes towards it? In this project we are eager to see how much the American politicians focus on the global warming topic and how their attitudes change throughout the 12 years of 2008-2020. By comparing the result with the actual total annual greenhouse gas emissions in the United States, we try to develop the real impact of American political efforts on their actual emissions, and how it is correlated. Additionally, we are also curious about the different demographic distribution among politicians with positive and negative attitudes towards reducing carbon dioxide emissions, which may give us some insights on what might have resulted in the negative attitudes.
 ## Research Questions
