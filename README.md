@@ -19,12 +19,9 @@ Apply sentiment analysis to the quotations and score them from -1 to 1, with 0 a
 ---
 #### Task 1.3: What is the real impact of American political efforts on their actual emissions
 Together with the actual annual greenhouse gas emissions data, construct a regression analysis of 
-$$
-\footnotesize
-\begin{aligned} 
- emissions = & f(political\ attention\ value,\ political \ support\ rate)
-\end{aligned}
-$$ to see how significantly political efforts can affect th actual emissions.
+ <img src="https://github.com/jessie-233/Pics/blob/main/equation.png?raw=true" width = "460" height = "29" align=center />
+ 
+to see how significantly political efforts can affect th actual emissions.
 
 *Discuss:* The casualty relationship is impossible to detect in this context, because the change of CO~2~ emissions can be also due to various non-political reasons, for example, the 2008 financial crisis and  COVID-19 pandemic.
 
@@ -38,11 +35,11 @@ Show different demographic distribution among speakers with positive and negativ
 ## Proposed additional datasets
 -   Metadata about the speakers in the Quotebank dataset (speaker_attributes.parquet): We will assign each speaker his party affiliation, age, gender, ethnic group, academic degree, religion from this dataset
     
--   Total annual greenhouse gas emissions in the United States from 2008 to 2019: the data is in csv format with a shape of (8,12). Columns are years from 2008 to 2019. Rows are GHG emissions in 7 sectors, including transportation, electricity generation, industry, agriculture, commercial, residential, and U.S. territories. Last row is the total amount of GHG in all 7 sectors. We plan to draw a line stacked chart ([one example here](https://github.com/epfl-ada/ada-2021-project-dataminers/blob/main/pics/us-ghg-emissions.png?raw=true)) to visualize the trend and use the data to perform a regression analysis with the results from quotebank.
+-   Total annual greenhouse gas emissions in the United States from 2008 to 2019: the data is in csv format with a shape of (8,12). Columns are years from 2008 to 2019. Rows are GHG emissions in 7 sectors, including transportation, electricity generation, industry, agriculture, commercial, residential, and U.S. territories. Last row is the total amount of GHG in all 7 sectors. We plan to draw a line stacked chart ([one example here](https://github.com/jessie-233/Pics/blob/main/us-ghg-emissions.png?raw=true)) to visualize the trend and use the data to perform a regression analysis with the results from quotebank.
 (Source: EPA's annual Inventory of the U.S. Greenhouse Gas Emissions and Sinks [Greenhouse Gas Inventory Data Explorer | US EPA](https://cfpub.epa.gov/ghgdata/inventoryexplorer/#allsectors/allsectors/allgas/econsect/all))
 ## Methods
 ![workflow](https://raw.githubusercontent.com/jessie-233/Pics/main/workflow.png)
-<center><b>Workflow</b></center>
+<div align='center' >Workflow</div>
 
 * **Information retrieval**: collect climate change related quotations for each year
 	* method: basic search engine using regular expression
@@ -51,10 +48,13 @@ Show different demographic distribution among speakers with positive and negativ
 	* method: using `nltk` [Vader](https://github.com/cjhutto/vaderSentiment) toolkit
 
 * **Observational study**: visualize demographic distribution among speakers with positive and negative attitudes, and analyze what might have resulted in the negative attitudes
-	* method: turn categorical columns into dummy variables $\rightarrow$ use `causalinference` package to estimate Inverse Propensity Score Weight (IPSW) and calculate Average Treatment Effect (ATE) $\rightarrow$ compare ATE of each group and draw conclusions
+	* method: turn categorical columns into dummy variables --> use `causalinference` package to estimate Inverse Propensity Score Weight (IPSW) and calculate Average Treatment Effect (ATE) --> compare ATE of each group and draw conclusions
   
 ## Contributions 
 **Maocheng Xu**: Wiki data cleaning, Sentiment analysis, Webpage visualization
+
 **Yu Zhou**: Computing platform construction, Matched observational study
+
 **Yinghui Jiang**: Quotes data cleaning, Webpage copywriting
+
 **Jingqi Liu**: Quotation retrieval, plotting figures during data analysis, regression analysis
